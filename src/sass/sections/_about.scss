@@ -5,9 +5,9 @@
     $primary-color 0%,
     $secondary-color 100%
   );
-  color: $white-color;
+  color: #333333;
   height: 100%;
-  border-top: 0px;
+  border-top: none;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
@@ -49,6 +49,7 @@
 
       &-text {
         text-align: left;
+        font-weight: bold; /* This makes the text bold */
 
         @include respond(tab-port) {
           text-align: left;
